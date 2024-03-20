@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "moddingtest",
+	"version": "${version}",
+	"name": "Modding Test",
+	"description": "I am so desperately hoping this mod will work. Please, please work!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/moddingtest/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.gamedokter.moddingtest.ModdingTest"
+		],
+		"client": [
+			"net.gamedokter.moddingtest.ModdingTestClient"
+		],
+		"fabric-datagen": [
+			"net.gamedokter.moddingtest.ModdingTestDataGenerator"
+		]
+	},
+	"mixins": [
+		"moddingtest.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.6",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
